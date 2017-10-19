@@ -28,3 +28,7 @@
   remote = origin
   merge = refs/heads/master
 
+
+[user]
+  name = Mukesh Yadav
+  email = mak.gnu@gmail.com

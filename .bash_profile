@@ -3,6 +3,10 @@ PATH=/usr/local/bin:$PATH
 PATH=$HOME/bin:$PATH
 export PATH
 
+# bash-completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+. $(brew --prefix)/etc/bash_completion
+fi
 
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
