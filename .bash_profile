@@ -1,7 +1,5 @@
-# Add Homebrew `/usr/local/bin` and User `~/bin` to the `$PATH`
-PATH=/usr/local/bin:$PATH
-PATH=$HOME/bin:$PATH
-export PATH
+# Add `~/bin` to the `$PATH`
+export PATH="$HOME/bin:$PATH";
 
 # bash-completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
@@ -17,6 +15,6 @@ export EDITOR='vim'
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
 for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
-  [ -r "$file" ] && source "$file"
-done
-unset file
+  [ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
