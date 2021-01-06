@@ -499,6 +499,24 @@ Then add this line to your `.bash_profile`:
 export PATH="/usr/local/opt/gettext/bin:$PATH"
 ```
 
+## Rust
+Rust is a systems programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety.
+
+Installation
+For installation it's advised to use rustup as it will (among other things) allow you to switch between versions of Rust without having to download anything additional.
+```
+brew install rustup
+```
+Use rustup to install the Rust compiler (rustc) and the Rust package manager (cargo).
+```
+rustup-init
+```
+To verify you can run:
+```
+rustc --version
+```
+The official documentation on how to install Rust.
+
 ## Node.js
 
 The recommended way to install [Node.js](http://nodejs.org/) is to use [nvm](https://github.com/creationix/nvm) (Node Version Manager) which allows you to manage multiple versions of Node.js on the same machine.
